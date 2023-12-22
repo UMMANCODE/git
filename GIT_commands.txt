@@ -1,0 +1,42 @@
+git --version -> to see the version of Git.
+
+git config [--global] user.name "<username>" -> to set username for this[every] repository.
+git config [--global] user.email "<email>" -> to set email for this[every] repository.
+
+git init -> to initialize an empty Git repository.
+
+git status -> to see the status of the branch.
+git status --short -> to see the status of the branch in more compact way.
+
+git add <files/folders_name> -> to add files/folders to the Staging Environment.
+git add --all/-A -> to add all to the Staging Environment.
+
+git commit -m "<message>" -> to commit changes.
+git commit -a -m "<message>" -> to add all and skipping Staging Environment.
+
+git log -> to view the history of commits for a repository.
+
+git <command> [-]-help -  See all the available options for the specific command.
+git help --all -  See all possible commands.
+
+git branch <branch_name> -> to create a new branch.
+git branch -> to see all the branches.
+git branch -d <branch_name> -> to delete an existing branch.
+
+git checkout <branch_name> -> to move to the specific branch. Will not move it, if it does not exist.
+git checkout -b <branch_name> -> to move to the specific branch. Will create a new branch, and move to it, if it does not exist.
+
+git merge <branch_name> -> to merge the specified brach with the current branch.
+git merge --abort -> to abort the merging process.
+
+
+
+
+1) Files in your Git repository folder can be in one of 2 states:
+	Tracked - files that Git knows about and are added to the repository.
+	Untracked - files that are in your working directory, but not added to the repository.
+2) Short status flags are:
+	?? - Untracked files
+	A - Files added to stage
+	M - Modified files
+	D - Deleted files
